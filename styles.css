@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    color:black;
+    background-color: #EEEEEE;
+    text-align: center;
+    font-family: 'Lato', sans-serif;  
+}
+
+#header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEEEEE;
+
+}
+
+#nav-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+    padding: 3px;
+}
+
+#header-img{
+    width: 330px;
+    padding: 15px;
+}
+#main-heading{
+    padding-bottom: 20px;
+
+}
+h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+#form{
+    display:flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 50px;
+}
+#email{
+    width: 270px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+#submit{
+    padding: 5px 5px 5px 20px;
+    font-size: 1rem;
+    font-weight: 900;
+    font-style: bold;
+}
+main{
+    padding: 20px 10px;
+}
+
+button, #submit{
+    background-color: #f1c40f;
+    text-transform: uppercase;
+    border: none;
+}
+
+button{
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+#Features{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#How_it_Works{
+    margin-bottom: 50px;
+}
+#video{
+    width: 100%;
+    max-width: 550px;
+}
+
+.text{
+    padding: 40px  0;
+    max-width: 1000px;
+
+}
+
+.card{
+    border: 1px solid black;
+    width: 300px;
+    margin: 10px auto;
+    
+}
+
+h4{
+    background-color:#DDDDDD ;
+    text-transform: uppercase;
+    padding: 15px 0;
+}
+
+h2{
+    padding: 15px 0 20px 0 ;
+}
+
+.card> p{
+    white-space: pre-line;
+    line-height: 2rem;
+    margin-bottom: 20px
+}
+
+#Pricing{
+    margin-bottom: 20px;
+}
+
+footer{
+    background-color: #DDDDDD;
+    padding: 20px;
+}
+
+#privacy{
+    text-align: right;
+    padding-right: 10px;
+    margin-bottom: 5px;
+    word-spacing: 1rem;
+}
+
+#Copyright{
+    text-align: right;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.social-icon{
+    display: none;
+}
+
+button, #submit , .card{
+    border-radius: 3px;
+}
+
+@media only screen and (min-width: 550px){
+
+    #header{
+        flex-direction: row;
+        justify-content:space-between;
+    }
+    #nav-bar{
+        flex-direction: row;
+        justify-content:space-evenly;
+        width: 40%;
+    }
+    .social-icon{
+        display: unset;
+        color: #FF8C00;
+    }
+
+    .text{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+        margin: auto;
+    }
+
+    .content{
+        text-align: left;
+        width: 80%;
+    }
+
+}
+
+@media only screen and (min-width: 800px){
+    #Pricing{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        max-width: 1000px;
+    }
+
+    .card{
+        margin: 10px;
+    }
+}
